@@ -1,0 +1,34 @@
+#sidebar {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    background-color: red;
+
+    #icon {
+        display: flex;
+        text-align: center;
+        margin-bottom: 50px;
+        padding-top: 25px;
+
+        img{
+            margin-left: 40px;
+            flex: 1;
+        }
+
+        h2 {
+            flex: 3;
+        }
+    }
+
+    #links {
+        margin-bottom: 50px;
+    }
+
+    li {
+        padding-left: 70px;
+        list-style: none;
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+}
+

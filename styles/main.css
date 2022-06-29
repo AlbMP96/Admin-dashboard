@@ -33,7 +33,6 @@ body #header #searchbar input {
 body #header #user {
   display: flex;
   text-align: center;
-  position: relative;
   padding-left: 30%;
   padding-top: 20px;
 }
@@ -56,7 +55,6 @@ body #header #user h3 {
 }
 body #header #welcome {
   display: flex;
-  text-align: center;
 }
 body #header #welcome .welcome_user_pfp {
   border-radius: 50%;
@@ -127,5 +125,58 @@ body #sidebar li:hover {
 body #content {
   grid-column-start: 2;
   grid-row-start: 2;
+  display: grid;
+  grid-template: 6fr 3fr/3fr 1fr;
+  gap: 10px;
   background-color: rgb(206, 206, 206);
+  padding: 5px;
+}
+body #content #cards {
+  display: grid;
+  grid-template: 1fr 1fr 1fr/1fr 1fr;
+  gap: 10px;
+}
+body #content #cards .project {
+  background-color: white;
+  border-radius: 25px;
+  border-left: solid 5px orange;
+  padding: 5px;
+}
+body #content #cards .project p {
+  color: rgb(139, 139, 139);
+}
+body #content #announcements div {
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: white;
+  border-radius: 25px;
+}
+body #content #announcements div:first-child {
+  border-bottom: solid 1px grey;
+  padding-top: 1px;
+}
+body #content #announcements div:last-child {
+  border-top: solid 1px grey;
+  padding-bottom: 1px;
+}
+body #content #trending #users {
+  background-color: white;
+  border-radius: 25px;
+}
+body #content #trending .user {
+  display: flex;
+  border-radius: 25px;
+  padding-left: 15px;
+}
+body #content #trending .user:hover {
+  cursor: pointer;
+  background-color: rgb(139, 139, 139);
+}
+body #content #trending .user .user_pfp {
+  transform: translateY(15px);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-left: 20px;
+  margin-right: 10px;
 }/*# sourceMappingURL=main.css.map */

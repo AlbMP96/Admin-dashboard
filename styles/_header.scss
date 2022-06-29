@@ -31,7 +31,6 @@
     #user {
         display: flex;
         text-align: center;
-        position: relative;
         padding-left: 30%;
         padding-top: 20px;
 
@@ -59,7 +58,6 @@
 
     #welcome {
         display: flex;
-        text-align: center;
 
         .welcome_user_pfp {
             border-radius: 50%;

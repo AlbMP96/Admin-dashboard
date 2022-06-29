@@ -21,13 +21,21 @@
         display: grid;
         grid-template: 1fr 1fr 1fr / 1fr 1fr;
         gap: 10px;
+        row-gap: 20px;
 
         .project {
             background-color: white;
             border-radius: 25px;
             border-left: solid 5px orange;
             padding: 5px;
+            box-sizing: border-box;
+            height: 250px;
 
+            &:hover {
+                border: solid 10px orange;
+                cursor: pointer;
+            }
+            
             p {
                 color: variables.$dark-grey;
             }

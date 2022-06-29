@@ -1,0 +1,11 @@
+$shadow: 10px 10px 8px #888888 inset;
+$light-grey: rgb(206, 206, 206);
+$dark-grey: rgb(139, 139, 139);
+$blue: rgb(66, 143, 231);
+
+@mixin pfp-style {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+}

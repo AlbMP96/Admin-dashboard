@@ -6,7 +6,8 @@ body {
   margin: 0;
   font-family: "Roboto", sans-serif;
 }
-body #header {
+
+#header {
   grid-column-start: 2;
   grid-column-end: 4;
   grid-row-end: 2;
@@ -17,63 +18,63 @@ body #header {
   padding: 10px;
   padding-left: 50px;
 }
-body #header #searchbar {
+#header #searchbar {
   padding-top: 20px;
 }
-body #header #searchbar img {
+#header #searchbar img {
   margin-right: 10px;
   float: left;
   display: block;
 }
-body #header #searchbar input {
+#header #searchbar input {
   height: 25px;
   width: 75%;
   border-radius: 25px;
   background-color: rgb(206, 206, 206);
   border-style: none;
 }
-body #header #user {
+#header #user {
   display: flex;
   text-align: center;
   padding-left: 30%;
   padding-top: 20px;
 }
-body #header #user #notification {
+#header #user #notification {
   padding-top: 15px;
   width: 25px;
   height: 25px;
 }
-body #header #user #notification:hover {
+#header #user #notification:hover {
   cursor: pointer;
 }
-body #header #user .user_pfp {
+#header #user .user_pfp {
   border-radius: 50%;
   width: 50px;
   height: 50px;
   margin-left: 20px;
 }
-body #header #user h3 {
+#header #user h3 {
   margin-left: 20px;
 }
-body #header #welcome {
+#header #welcome {
   display: flex;
 }
-body #header #welcome .welcome_user_pfp {
+#header #welcome .welcome_user_pfp {
   border-radius: 50%;
   width: 100px;
   height: 100px;
   margin-right: 10px;
 }
-body #header #welcome #welcome-text {
+#header #welcome #welcome-text {
   font-weight: bold;
   text-align: left;
 }
-body #header #buttons {
+#header #buttons {
   position: relative;
   padding-left: 20%;
   padding-top: 5%;
 }
-body #header #buttons button {
+#header #buttons button {
   color: white;
   margin-left: 5%;
   font-weight: bold;
@@ -83,10 +84,11 @@ body #header #buttons button {
   border-radius: 25px;
   border-style: none;
 }
-body #header #buttons button:hover {
+#header #buttons button:hover {
   cursor: pointer;
 }
-body #sidebar {
+
+#sidebar {
   grid-column-start: 1;
   grid-row-start: 1;
   grid-row-end: 4;
@@ -95,23 +97,23 @@ body #sidebar {
   background-color: rgb(66, 143, 231);
   margin: 0;
 }
-body #sidebar #icon {
+#sidebar #icon {
   display: flex;
   text-align: center;
   margin-bottom: 50px;
   padding-top: 25px;
 }
-body #sidebar #icon img {
+#sidebar #icon img {
   margin-left: 40px;
   flex: 1;
 }
-body #sidebar #icon h2 {
+#sidebar #icon h2 {
   flex: 3;
 }
-body #sidebar #links {
+#sidebar #links {
   margin-bottom: 50px;
 }
-body #sidebar li {
+#sidebar li {
   width: 50%;
   border-bottom: 3px solid rgb(66, 143, 231);
   padding-bottom: 10px;
@@ -120,11 +122,12 @@ body #sidebar li {
   font-size: 1.5rem;
   margin-bottom: 15px;
 }
-body #sidebar li:hover {
+#sidebar li:hover {
   border-bottom: 3px solid white;
   cursor: pointer;
 }
-body #content {
+
+#content {
   grid-column-start: 2;
   grid-row-start: 2;
   display: grid;
@@ -137,54 +140,54 @@ body #content {
   max-height: fit-content;
   overflow-y: scroll;
 }
-body #content #cards {
+#content #cards {
   display: grid;
   grid-template: 1fr 1fr 1fr/1fr 1fr;
   gap: 10px;
 }
-body #content #cards .project {
+#content #cards .project {
   background-color: white;
   border-radius: 25px;
   border-left: solid 5px orange;
   padding: 5px;
 }
-body #content #cards .project p {
+#content #cards .project p {
   color: rgb(139, 139, 139);
 }
-body #content #announcements div {
+#content #announcements div {
   padding-left: 5px;
   padding-right: 5px;
   background-color: white;
   border-radius: 25px;
 }
-body #content #announcements div:first-child {
+#content #announcements div:first-child {
   padding-top: 1px;
 }
-body #content #announcements div:last-child {
+#content #announcements div:last-child {
   padding-bottom: 1px;
 }
-body #content #announcements div .border {
+#content #announcements div .border {
   width: 98%;
   height: 1px;
   background-color: grey;
 }
-body #content #trending #users {
+#content #trending #users {
   background-color: white;
   border-radius: 25px;
 }
-body #content #trending .user {
+#content #trending .user {
   display: flex;
   border-radius: 25px;
   padding-left: 15px;
 }
-body #content #trending .user p:first-child {
+#content #trending .user p:first-child {
   font-weight: bold;
 }
-body #content #trending .user:hover {
+#content #trending .user:hover {
   cursor: pointer;
   background-color: rgb(139, 139, 139);
 }
-body #content #trending .user .user_pfp {
+#content #trending .user .user_pfp {
   transform: translateY(15px);
   border-radius: 50%;
   width: 50px;

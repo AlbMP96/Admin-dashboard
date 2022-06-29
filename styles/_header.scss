@@ -1,3 +1,5 @@
+@use 'variables';
+
 #header {
     grid-column-start: 2;
     grid-column-end: 4;
@@ -7,7 +9,7 @@
     grid-template: 1fr 1fr / 4fr 3fr;
 
     background-color: white;
-    box-shadow: 10px 10px 8px #888888 inset;
+    box-shadow: variables.$shadow;
 
     padding: 10px;
     padding-left: 50px;
@@ -25,7 +27,7 @@
             height: 25px;
             width: 75%;
             border-radius: 25px;
-            background-color: rgb(206, 206, 206);
+            background-color: variables.$light-grey;
             border-style: none;
         }
     }
@@ -47,10 +49,7 @@
         }
         
         .user_pfp {
-            border-radius: 50%;
-            width: 50px;
-            height: 50px;
-            margin-left: 20px;
+            @include variables.pfp-styles;
         }
 
         h3 {
@@ -85,7 +84,7 @@
             font-weight: bold;
             height: 40px;
             width: 80px;
-            background-color: rgb(66, 143, 231);
+            background-color: variables.$blue;
             border-radius: 25px;
             border-style: none;
 

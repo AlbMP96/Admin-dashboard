@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,33 +8,57 @@
     <link rel="stylesheet" href="./styles/main.css">
     <title>Admin dashboard</title>
 </head>
+
 <body>
     <header id="header">
-        
+        <div id="searchbar">
+            <form action="#">
+                <label for="search"><img src="./resources/header/magnify.png"></label>
+                <input type="text">
+            </form>
+        </div>
+        <div id="user">
+            <img id="notification" src="./resources/header/notofication.png">
+            <img class="user_pfp" src="./resources/pfps/tanjiro_pfp.jpg">
+            <h3>Morgan Oakley</h3>
+        </div>
+        <div id="welcome">
+            <img class="welcome_user_pfp" src="./resources/pfps/tanjiro_pfp.jpg">
+            <div id="welcome-text">
+                <p>Hi there,</p>
+                <h2>Morgan Oakley (@morgan)</h2>
+            </div>
+        </div>
+        <div id="buttons">
+            <button>New</button>
+            <button>Upload</button>
+            <button>Share</button>
+        </div>
     </header>
     <nav id="sidebar">
         <div id="icon">
-            <img src="./resources/view-dashboard.png"> 
+            <img src="./resources/sidebar/dashboard.png">
             <h2>Dashboard</h2>
         </div>
         <div id="links">
             <ul>
-                <li style="background: url('./resources/home.png') no-repeat left;">Home</li>
-                <li style="background: url('./resources/profile.png') no-repeat left;">Profile</li>
-                <li style="background: url('./resources/message.png') no-repeat left;">Messages</li>
-                <li style="background: url('./resources/clock.png') no-repeat left;">History</li>
-                <li style="background: url('./resources/tasks.png') no-repeat left;">Tasks</li>
-                <li style="background: url('./resources/communities.png') no-repeat left;">Communities</li>
+                <li style="background: url('./resources/sidebar/home.png') no-repeat left;">Home</li>
+                <li style="background: url('./resources/sidebar/profile.png') no-repeat left;">Profile</li>
+                <li style="background: url('./resources/sidebar/message.png') no-repeat left;">Messages</li>
+                <li style="background: url('./resources/sidebar/clock.png') no-repeat left;">History</li>
+                <li style="background: url('./resources/sidebar/tasks.png') no-repeat left;">Tasks</li>
+                <li style="background: url('./resources/sidebar/communities.png') no-repeat left;">Communities</li>
             </ul>
         </div>
         <div id="help">
             <ul>
-                <li style="background: url('./resources/settings.png') no-repeat left;">Settings</li>
-                <li style="background: url('./resources/support.png') no-repeat left;">Support</li>
-                <li style="background: url('./resources/privacy.png') no-repeat left;">Privacy</li>
+                <li style="background: url('./resources/sidebar/settings.png') no-repeat left;">Settings</li>
+                <li style="background: url('./resources/sidebar/support.png') no-repeat left;">Support</li>
+                <li style="background: url('./resources/sidebar/privacy.png') no-repeat left;">Privacy</li>
             </ul>
         </div>
     </nav>
     <main id="content"></main>
 </body>
+
 </html>

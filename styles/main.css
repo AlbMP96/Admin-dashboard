@@ -1,21 +1,99 @@
 body {
   display: grid;
   grid-template: 1fr 4fr/1fr 4fr;
-  min-height: 100vh;
-  min-width: 100vw;
+  max-height: 100vh;
+  max-width: 100vw;
+  margin: 0;
 }
 body #header {
   grid-column-start: 2;
   grid-column-end: 4;
-  grid-row-start: 1;
   grid-row-end: 2;
-  background-color: black;
+  display: grid;
+  grid-template: 1fr 1fr/4fr 3fr;
+  background-color: white;
+  padding: 10px;
+  padding-left: 50px;
+}
+body #header #searchbar {
+  padding-top: 20px;
+}
+body #header #searchbar img {
+  margin-right: 10px;
+  float: left;
+  display: block;
+}
+body #header #searchbar input {
+  height: 25px;
+  width: 75%;
+  border-radius: 25px;
+  background-color: rgb(206, 206, 206);
+  border-style: none;
+}
+body #header #user {
+  display: flex;
+  text-align: center;
+  position: relative;
+  padding-left: 30%;
+  padding-top: 20px;
+}
+body #header #user #notification {
+  padding-top: 15px;
+  width: 25px;
+  height: 25px;
+}
+body #header #user #notification:hover {
+  cursor: pointer;
+}
+body #header #user .user_pfp {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-left: 20px;
+}
+body #header #user h3 {
+  margin-left: 20px;
+}
+body #header #welcome {
+  display: flex;
+  text-align: center;
+}
+body #header #welcome .welcome_user_pfp {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+}
+body #header #welcome #welcome-text {
+  font-weight: bold;
+  text-align: left;
+}
+body #header #buttons {
+  position: relative;
+  padding-left: 20%;
+  padding-top: 5%;
+}
+body #header #buttons button {
+  color: white;
+  margin-left: 5%;
+  font-weight: bold;
+  height: 40px;
+  width: 80px;
+  background-color: rgb(66, 143, 231);
+  border-radius: 25px;
+  border-style: none;
+}
+body #header #buttons button:hover {
+  cursor: pointer;
 }
 body #sidebar {
   grid-column-start: 1;
   grid-row-start: 1;
   grid-row-end: 4;
-  background-color: red;
+  color: white;
+  font-weight: bold;
+  background-color: rgb(66, 143, 231);
+  margin: 0;
 }
 body #sidebar #icon {
   display: flex;
@@ -34,13 +112,20 @@ body #sidebar #links {
   margin-bottom: 50px;
 }
 body #sidebar li {
+  width: 50%;
+  border-bottom: 3px solid rgb(66, 143, 231);
+  padding-bottom: 10px;
   padding-left: 70px;
   list-style: none;
   font-size: 1.5rem;
   margin-bottom: 15px;
 }
+body #sidebar li:hover {
+  border-bottom: 3px solid white;
+  cursor: pointer;
+}
 body #content {
   grid-column-start: 2;
   grid-row-start: 2;
-  background-color: blue;
+  background-color: rgb(206, 206, 206);
 }/*# sourceMappingURL=main.css.map */

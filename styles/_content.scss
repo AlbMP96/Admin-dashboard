@@ -76,7 +76,7 @@
             }
 
             .user_pfp {
-                @include variables.pfp-styles;
+                @include variables.pfp-style;
                 transform: translateY(15px);
                 margin-right: 10px;
             }

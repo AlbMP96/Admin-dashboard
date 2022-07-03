@@ -8,26 +8,23 @@ body {
 }
 
 #header {
-  grid-column-start: 2;
-  grid-column-end: 4;
-  grid-row-end: 2;
   display: grid;
   grid-template: 1fr 1fr/4fr 3fr;
   background-color: white;
   box-shadow: 10px 10px 8px #888888 inset;
-  padding: 10px;
-  padding-left: 50px;
+  padding: 0.7rem;
+  padding-left: 3.5rem;
 }
 #header #searchbar {
-  padding-top: 20px;
+  padding-top: 1.5rem;
 }
 #header #searchbar img {
-  margin-right: 10px;
+  margin-right: 0.7rem;
   float: left;
   display: block;
 }
 #header #searchbar input {
-  height: 25px;
+  height: 1.7rem;
   width: 75%;
   border-radius: 25px;
   background-color: rgb(206, 206, 206);
@@ -37,10 +34,10 @@ body {
   display: flex;
   text-align: center;
   padding-left: 30%;
-  padding-top: 20px;
+  padding-top: 1.5rem;
 }
 #header #user #notification {
-  padding-top: 15px;
+  padding-top: 1rem;
   width: 25px;
   height: 25px;
 }
@@ -78,8 +75,8 @@ body {
   color: white;
   margin-left: 5%;
   font-weight: bold;
-  height: 40px;
-  width: 80px;
+  height: 3rem;
+  width: 5rem;
   background-color: rgb(66, 143, 231);
   border-radius: 25px;
   border-style: none;
@@ -89,7 +86,6 @@ body {
 }
 
 #sidebar {
-  grid-column-start: 1;
   grid-row-start: 1;
   grid-row-end: 4;
   color: white;
@@ -100,28 +96,29 @@ body {
 #sidebar #icon {
   display: flex;
   text-align: center;
-  margin-bottom: 50px;
-  padding-top: 25px;
+  margin-bottom: 4rem;
+  padding-top: 1.5rem;
 }
 #sidebar #icon img {
-  margin-left: 40px;
+  margin-left: 3rem;
   flex: 1;
 }
 #sidebar #icon h2 {
   flex: 3;
 }
 #sidebar #links {
-  margin-bottom: 50px;
+  margin-bottom: 4rem;
 }
 #sidebar li {
   width: 50%;
   border-bottom: 3px solid rgb(66, 143, 231);
-  padding-bottom: 10px;
-  padding-left: 70px;
+  padding-bottom: 0.7rem;
+  padding-left: 5rem;
+  margin-right: 2rem;
   min-width: fit-content;
   list-style: none;
   font-size: 1.5rem;
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
 }
 #sidebar li:hover {
   border-bottom: 3px solid white;
@@ -129,10 +126,8 @@ body {
 }
 
 #content {
-  grid-column-start: 2;
-  grid-row-start: 2;
   display: grid;
-  grid-template: 1fr 1fr/3fr 1fr;
+  grid-template-columns: 3fr 1fr;
   gap: 10px;
   background-color: rgb(206, 206, 206);
   box-shadow: 10px 10px 8px #888888 inset;
@@ -143,17 +138,18 @@ body {
 }
 #content #cards {
   display: grid;
-  grid-template: 1fr 1fr 1fr/1fr 1fr;
-  gap: 10px;
-  row-gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  row-gap: 2rem;
 }
 #content #cards .project {
   background-color: white;
   border-radius: 25px;
   border-left: solid 5px orange;
-  padding: 5px;
+  padding: 1rem;
   box-sizing: border-box;
-  height: 250px;
+  min-width: fit-content;
+  min-height: fit-content;
 }
 #content #cards .project:hover {
   border: solid 10px orange;
@@ -163,8 +159,8 @@ body {
   color: rgb(139, 139, 139);
 }
 #content #announcements div {
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   background-color: white;
   border-radius: 25px;
 }
@@ -186,7 +182,7 @@ body {
 #content #trending .user {
   display: flex;
   border-radius: 25px;
-  padding-left: 15px;
+  padding-left: 1rem;
 }
 #content #trending .user p:first-child {
   font-weight: bold;
@@ -200,6 +196,6 @@ body {
   width: 50px;
   height: 50px;
   margin-left: 20px;
-  transform: translateY(15px);
-  margin-right: 10px;
+  transform: translateY(1rem);
+  margin-right: 1rem;
 }/*# sourceMappingURL=main.css.map */

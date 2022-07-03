@@ -1,30 +1,26 @@
 @use 'variables';
 
 #header {
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-end: 2;
-
     display: grid;
     grid-template: 1fr 1fr / 4fr 3fr;
 
     background-color: white;
     box-shadow: variables.$shadow;
 
-    padding: 10px;
-    padding-left: 50px;
+    padding: 0.7rem;
+    padding-left: 3.5rem;
 
     #searchbar {
-        padding-top: 20px;
+        padding-top: 1.5rem;
 
         img {
-            margin-right: 10px;
+            margin-right: 0.7rem;
             float:left;
             display: block;
         }
 
         input {
-            height: 25px;
+            height: 1.7rem;
             width: 75%;
             border-radius: 25px;
             background-color: variables.$light-grey;
@@ -36,10 +32,10 @@
         display: flex;
         text-align: center;
         padding-left: 30%;
-        padding-top: 20px;
+        padding-top: 1.5rem;
 
         #notification {
-            padding-top: 15px;
+            padding-top: 1rem;
             width: 25px;
             height: 25px;
 
@@ -82,8 +78,8 @@
             color: white;
             margin-left: 5%;
             font-weight: bold;
-            height: 40px;
-            width: 80px;
+            height: 3rem;
+            width: 5rem;
             background-color: variables.$blue;
             border-radius: 25px;
             border-style: none;
